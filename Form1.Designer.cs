@@ -86,6 +86,7 @@ namespace ChappellEberleAstorga_Assign4
             this.button1.TabIndex = 1;
             this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -98,6 +99,7 @@ namespace ChappellEberleAstorga_Assign4
             this.button2.TabIndex = 2;
             this.button2.Text = "2";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -110,6 +112,7 @@ namespace ChappellEberleAstorga_Assign4
             this.button3.TabIndex = 3;
             this.button3.Text = "3";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -122,6 +125,7 @@ namespace ChappellEberleAstorga_Assign4
             this.button4.TabIndex = 4;
             this.button4.Text = "4";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -134,6 +138,7 @@ namespace ChappellEberleAstorga_Assign4
             this.button5.TabIndex = 5;
             this.button5.Text = "5";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -146,6 +151,7 @@ namespace ChappellEberleAstorga_Assign4
             this.button6.TabIndex = 6;
             this.button6.Text = "6";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -158,6 +164,7 @@ namespace ChappellEberleAstorga_Assign4
             this.button7.TabIndex = 7;
             this.button7.Text = "7";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -170,6 +177,7 @@ namespace ChappellEberleAstorga_Assign4
             this.button8.TabIndex = 8;
             this.button8.Text = "8";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
@@ -182,6 +190,7 @@ namespace ChappellEberleAstorga_Assign4
             this.button9.TabIndex = 9;
             this.button9.Text = "9";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button0
             // 
@@ -194,6 +203,7 @@ namespace ChappellEberleAstorga_Assign4
             this.button0.TabIndex = 10;
             this.button0.Text = "0";
             this.button0.UseVisualStyleBackColor = false;
+            this.button0.Click += new System.EventHandler(this.button0_Click);
             // 
             // buttonDecimal
             // 
@@ -206,6 +216,7 @@ namespace ChappellEberleAstorga_Assign4
             this.buttonDecimal.TabIndex = 11;
             this.buttonDecimal.Text = ".";
             this.buttonDecimal.UseVisualStyleBackColor = false;
+            this.buttonDecimal.Click += new System.EventHandler(this.buttonDecimal_Click);
             // 
             // buttonNegative
             // 
@@ -218,6 +229,7 @@ namespace ChappellEberleAstorga_Assign4
             this.buttonNegative.TabIndex = 12;
             this.buttonNegative.Text = "( - )";
             this.buttonNegative.UseVisualStyleBackColor = false;
+            this.buttonNegative.Click += new System.EventHandler(this.buttonNegative_Click);
             // 
             // buttonAdd
             // 
@@ -230,6 +242,7 @@ namespace ChappellEberleAstorga_Assign4
             this.buttonAdd.TabIndex = 13;
             this.buttonAdd.Text = "+";
             this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // buttonSubtract
             // 
@@ -242,6 +255,7 @@ namespace ChappellEberleAstorga_Assign4
             this.buttonSubtract.TabIndex = 14;
             this.buttonSubtract.Text = "-";
             this.buttonSubtract.UseVisualStyleBackColor = false;
+            this.buttonSubtract.Click += new System.EventHandler(this.buttonSubtract_Click);
             // 
             // buttonDivide
             // 
@@ -254,6 +268,7 @@ namespace ChappellEberleAstorga_Assign4
             this.buttonDivide.TabIndex = 15;
             this.buttonDivide.Text = "÷";
             this.buttonDivide.UseVisualStyleBackColor = false;
+            this.buttonDivide.Click += new System.EventHandler(this.buttonDivide_Click);
             // 
             // buttonMultiply
             // 
@@ -266,6 +281,7 @@ namespace ChappellEberleAstorga_Assign4
             this.buttonMultiply.TabIndex = 16;
             this.buttonMultiply.Text = "*";
             this.buttonMultiply.UseVisualStyleBackColor = false;
+            this.buttonMultiply.Click += new System.EventHandler(this.buttonMultiply_Click);
             // 
             // buttonEquals
             // 
@@ -278,6 +294,7 @@ namespace ChappellEberleAstorga_Assign4
             this.buttonEquals.TabIndex = 17;
             this.buttonEquals.Text = "=";
             this.buttonEquals.UseVisualStyleBackColor = false;
+            this.buttonEquals.Click += new System.EventHandler(this.buttonEquals_Click);
             // 
             // buttonEqWhite
             // 
@@ -290,6 +307,7 @@ namespace ChappellEberleAstorga_Assign4
             this.buttonEqWhite.TabIndex = 18;
             this.buttonEqWhite.Text = "Eq 1";
             this.buttonEqWhite.UseVisualStyleBackColor = false;
+            this.buttonEqWhite.Click += new System.EventHandler(this.buttonEqWhite_Click);
             // 
             // buttonEqRed
             // 
@@ -302,6 +320,7 @@ namespace ChappellEberleAstorga_Assign4
             this.buttonEqRed.TabIndex = 19;
             this.buttonEqRed.Text = "Eq 2";
             this.buttonEqRed.UseVisualStyleBackColor = false;
+            this.buttonEqRed.Click += new System.EventHandler(this.buttonEqRed_Click);
             // 
             // buttonEqGreen
             // 
@@ -314,6 +333,7 @@ namespace ChappellEberleAstorga_Assign4
             this.buttonEqGreen.TabIndex = 20;
             this.buttonEqGreen.Text = "Eq 3";
             this.buttonEqGreen.UseVisualStyleBackColor = false;
+            this.buttonEqGreen.Click += new System.EventHandler(this.buttonEqGreen_Click);
             // 
             // buttonEqBlue
             // 
@@ -326,6 +346,7 @@ namespace ChappellEberleAstorga_Assign4
             this.buttonEqBlue.TabIndex = 21;
             this.buttonEqBlue.Text = "Eq 4";
             this.buttonEqBlue.UseVisualStyleBackColor = false;
+            this.buttonEqBlue.Click += new System.EventHandler(this.buttonEqBlue_Click);
             // 
             // buttonLinear
             // 
@@ -338,6 +359,7 @@ namespace ChappellEberleAstorga_Assign4
             this.buttonLinear.TabIndex = 22;
             this.buttonLinear.Text = "Linear";
             this.buttonLinear.UseVisualStyleBackColor = false;
+            this.buttonLinear.Click += new System.EventHandler(this.buttonLinear_Click);
             // 
             // buttonQuadratic
             // 
@@ -350,6 +372,7 @@ namespace ChappellEberleAstorga_Assign4
             this.buttonQuadratic.TabIndex = 23;
             this.buttonQuadratic.Text = "Quad";
             this.buttonQuadratic.UseVisualStyleBackColor = false;
+            this.buttonQuadratic.Click += new System.EventHandler(this.buttonQuad_Click);
             // 
             // buttonCubic
             // 
@@ -362,6 +385,7 @@ namespace ChappellEberleAstorga_Assign4
             this.buttonCubic.TabIndex = 24;
             this.buttonCubic.Text = "Cubic";
             this.buttonCubic.UseVisualStyleBackColor = false;
+            this.buttonCubic.Click += new System.EventHandler(this.buttonCubic_Click);
             // 
             // buttonCircle
             // 
@@ -374,6 +398,7 @@ namespace ChappellEberleAstorga_Assign4
             this.buttonCircle.TabIndex = 25;
             this.buttonCircle.Text = "Circle";
             this.buttonCircle.UseVisualStyleBackColor = false;
+            this.buttonCircle.Click += new System.EventHandler(this.buttonCircle_Click);
             // 
             // buttonXMin
             // 
@@ -399,6 +424,7 @@ namespace ChappellEberleAstorga_Assign4
             this.buttonXMax.TabIndex = 27;
             this.buttonXMax.Text = "X Max";
             this.buttonXMax.UseVisualStyleBackColor = false;
+            this.buttonXMax.Click += new System.EventHandler(this.buttonXMax_Click);
             // 
             // buttonXInt
             // 
@@ -411,6 +437,7 @@ namespace ChappellEberleAstorga_Assign4
             this.buttonXInt.TabIndex = 28;
             this.buttonXInt.Text = "X Int";
             this.buttonXInt.UseVisualStyleBackColor = false;
+            this.buttonXInt.Click += new System.EventHandler(this.buttonXInt_Click);
             // 
             // buttonYMin
             // 
@@ -423,6 +450,7 @@ namespace ChappellEberleAstorga_Assign4
             this.buttonYMin.TabIndex = 29;
             this.buttonYMin.Text = "Y Min";
             this.buttonYMin.UseVisualStyleBackColor = false;
+            this.buttonYMin.Click += new System.EventHandler(this.buttonYMin_Click);
             // 
             // buttonYMax
             // 
@@ -435,6 +463,7 @@ namespace ChappellEberleAstorga_Assign4
             this.buttonYMax.TabIndex = 30;
             this.buttonYMax.Text = "Y Max";
             this.buttonYMax.UseVisualStyleBackColor = false;
+            this.buttonYMax.Click += new System.EventHandler(this.buttonYMax_Click);
             // 
             // buttonYInt
             // 
@@ -447,6 +476,7 @@ namespace ChappellEberleAstorga_Assign4
             this.buttonYInt.TabIndex = 31;
             this.buttonYInt.Text = "Y Int";
             this.buttonYInt.UseVisualStyleBackColor = false;
+            this.buttonYInt.Click += new System.EventHandler(this.buttonYInt_Click);
             // 
             // Form1
             // 
