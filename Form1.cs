@@ -116,34 +116,38 @@ namespace ChappellEberleAstorga_Assign4
             double.TryParse(operand1, out num1);
             double.TryParse(operand2, out num2);
 
-            if (operation == '+')
+            switch (operation)
             {
-                result = num1 + num2;
-                outputBox.Text = result.ToString();
-            }
-            else if (operation == '-')
-            {
-                result = num1 - num2;
-                outputBox.Text = result.ToString();
-            }
-            else if (operation == '*')
-            {
-                result = num1 * num2;
-                outputBox.Text = result.ToString();
-            }
-            else if (operation == '÷')
-            {
-                if (num2 != 0)
-                {
-                    result = num1 / num2;
+                case '+':
+                    result = num1 + num2;
                     outputBox.Text = result.ToString();
-                }
-                else
-                {
-                    outputBox.Text = "Ya can't divide by 0, bro...";
-                }
-            }
+                    break;
 
+                case '-':
+                    result = num1 - num2;
+                    outputBox.Text = result.ToString();
+                    break;
+
+                case '*':
+                    result = num1 * num2;
+                    outputBox.Text = result.ToString();
+                    break;
+
+                case '÷':
+                    if (num2 != 0)
+                    {
+                        result = num1 / num2;
+                        outputBox.Text = result.ToString();
+                    }
+                    else
+                    {
+                        outputBox.Text = "Ya can't divide by 0, bro...";
+                    }
+                    break;
+
+                case '\0':
+                    break;
+            }
         }
 
         private void buttonCircle_Click(object sender, EventArgs e)
