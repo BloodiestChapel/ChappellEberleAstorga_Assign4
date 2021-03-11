@@ -62,6 +62,7 @@ namespace ChappellEberleAstorga_Assign4
             this.buttonYMin = new System.Windows.Forms.Button();
             this.buttonYMax = new System.Windows.Forms.Button();
             this.buttonYInt = new System.Windows.Forms.Button();
+            this.outputBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.graphPanel)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,7 +72,7 @@ namespace ChappellEberleAstorga_Assign4
             this.graphPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.graphPanel.Location = new System.Drawing.Point(12, 10);
             this.graphPanel.Name = "graphPanel";
-            this.graphPanel.Size = new System.Drawing.Size(360, 360);
+            this.graphPanel.Size = new System.Drawing.Size(360, 298);
             this.graphPanel.TabIndex = 0;
             this.graphPanel.TabStop = false;
             // 
@@ -478,12 +479,22 @@ namespace ChappellEberleAstorga_Assign4
             this.buttonYInt.UseVisualStyleBackColor = false;
             this.buttonYInt.Click += new System.EventHandler(this.buttonYInt_Click);
             // 
+            // outputBox
+            // 
+            this.outputBox.Font = new System.Drawing.Font("Source Code Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.outputBox.Location = new System.Drawing.Point(13, 314);
+            this.outputBox.Multiline = true;
+            this.outputBox.Name = "outputBox";
+            this.outputBox.Size = new System.Drawing.Size(358, 55);
+            this.outputBox.TabIndex = 32;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Desktop;
             this.ClientSize = new System.Drawing.Size(384, 681);
+            this.Controls.Add(this.outputBox);
             this.Controls.Add(this.buttonYInt);
             this.Controls.Add(this.buttonYMax);
             this.Controls.Add(this.buttonYMin);
@@ -521,6 +532,7 @@ namespace ChappellEberleAstorga_Assign4
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.graphPanel)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -559,6 +571,7 @@ namespace ChappellEberleAstorga_Assign4
         private System.Windows.Forms.Button buttonYMin;
         private System.Windows.Forms.Button buttonYMax;
         private System.Windows.Forms.Button buttonYInt;
+        private System.Windows.Forms.TextBox outputBox;
     }
 }
 
