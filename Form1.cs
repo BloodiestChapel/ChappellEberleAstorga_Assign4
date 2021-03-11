@@ -261,5 +261,13 @@ namespace ChappellEberleAstorga_Assign4
             outputBox.Text += input;
 
         }
+
+        private void buttonClear_Click(object sender, EventArgs e)
+        {
+            outputBox.Text = "";
+            input = string.Empty;
+            operand1 = string.Empty;
+            operand2 = string.Empty;
+        }
     }
 }

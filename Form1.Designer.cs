@@ -63,6 +63,7 @@ namespace ChappellEberleAstorga_Assign4
             this.buttonYMax = new System.Windows.Forms.Button();
             this.buttonYInt = new System.Windows.Forms.Button();
             this.outputBox = new System.Windows.Forms.TextBox();
+            this.buttonClear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.graphPanel)).BeginInit();
             this.SuspendLayout();
             // 
@@ -485,8 +486,21 @@ namespace ChappellEberleAstorga_Assign4
             this.outputBox.Location = new System.Drawing.Point(13, 314);
             this.outputBox.Multiline = true;
             this.outputBox.Name = "outputBox";
-            this.outputBox.Size = new System.Drawing.Size(358, 55);
+            this.outputBox.Size = new System.Drawing.Size(285, 55);
             this.outputBox.TabIndex = 32;
+            // 
+            // buttonClear
+            // 
+            this.buttonClear.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.buttonClear.Font = new System.Drawing.Font("Source Code Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonClear.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonClear.Location = new System.Drawing.Point(304, 314);
+            this.buttonClear.Name = "buttonClear";
+            this.buttonClear.Size = new System.Drawing.Size(67, 56);
+            this.buttonClear.TabIndex = 33;
+            this.buttonClear.Text = "Clear";
+            this.buttonClear.UseVisualStyleBackColor = false;
+            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
             // Form1
             // 
@@ -494,6 +508,7 @@ namespace ChappellEberleAstorga_Assign4
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Desktop;
             this.ClientSize = new System.Drawing.Size(384, 681);
+            this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.outputBox);
             this.Controls.Add(this.buttonYInt);
             this.Controls.Add(this.buttonYMax);
@@ -572,6 +587,7 @@ namespace ChappellEberleAstorga_Assign4
         private System.Windows.Forms.Button buttonYMax;
         private System.Windows.Forms.Button buttonYInt;
         private System.Windows.Forms.TextBox outputBox;
+        private System.Windows.Forms.Button buttonClear;
     }
 }
 
