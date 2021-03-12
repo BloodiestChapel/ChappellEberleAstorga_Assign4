@@ -58,24 +58,20 @@ namespace ChappellEberleAstorga_Assign4
 
         }
 
-        private void buttonEqWhite_Click(object sender, EventArgs e)
+        private void buttonEqChoose_Click(object sender, EventArgs e)
         {
+            ColorDialog colorDlg = new ColorDialog();
 
-        }
+            if (colorDlg.ShowDialog() == DialogResult.OK)
+            {
+                // Choose font color
+                buttonEqChoose.BackColor = colorDlg.Color;
 
-        private void buttonEqRed_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonEqGreen_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonEqBlue_Click(object sender, EventArgs e)
-        {
-
+                // Makes sure font is readable by inverting color of font
+                Color background = buttonEqChoose.BackColor;
+                background = Color.FromArgb(background.ToArgb() ^ 0xffffff);
+                buttonEqChoose.ForeColor = background;
+            }
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
@@ -83,6 +79,7 @@ namespace ChappellEberleAstorga_Assign4
             operand1 = input;
             operation = '+';
             input = string.Empty;
+
         }
 
         private void buttonSubtract_Click(object sender, EventArgs e)
@@ -90,6 +87,7 @@ namespace ChappellEberleAstorga_Assign4
             operand1 = input;
             operation = '-';
             input = string.Empty;
+
         }
 
         private void buttonDivide_Click(object sender, EventArgs e)
@@ -97,6 +95,7 @@ namespace ChappellEberleAstorga_Assign4
             operand1 = input;
             operation = '÷';
             input = string.Empty;
+
         }
 
         private void buttonMultiply_Click(object sender, EventArgs e)
@@ -104,6 +103,7 @@ namespace ChappellEberleAstorga_Assign4
             operand1 = input;
             operation = '*';
             input = string.Empty;
+
         }
 
         private void buttonEquals_Click(object sender, EventArgs e)
@@ -272,6 +272,7 @@ namespace ChappellEberleAstorga_Assign4
             input = string.Empty;
             operand1 = string.Empty;
             operand2 = string.Empty;
+
         }
     }
 }

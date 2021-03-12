@@ -48,10 +48,7 @@ namespace ChappellEberleAstorga_Assign4
             this.buttonMultiply = new System.Windows.Forms.Button();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.buttonEquals = new System.Windows.Forms.Button();
-            this.buttonEqWhite = new System.Windows.Forms.Button();
-            this.buttonEqRed = new System.Windows.Forms.Button();
-            this.buttonEqGreen = new System.Windows.Forms.Button();
-            this.buttonEqBlue = new System.Windows.Forms.Button();
+            this.buttonEqChoose = new System.Windows.Forms.Button();
             this.buttonLinear = new System.Windows.Forms.Button();
             this.buttonQuadratic = new System.Windows.Forms.Button();
             this.buttonCubic = new System.Windows.Forms.Button();
@@ -285,6 +282,11 @@ namespace ChappellEberleAstorga_Assign4
             this.buttonMultiply.UseVisualStyleBackColor = false;
             this.buttonMultiply.Click += new System.EventHandler(this.buttonMultiply_Click);
             // 
+            // colorDialog1
+            // 
+            this.colorDialog1.Color = System.Drawing.Color.Blue;
+            this.colorDialog1.SolidColorOnly = true;
+            // 
             // buttonEquals
             // 
             this.buttonEquals.BackColor = System.Drawing.SystemColors.ButtonShadow;
@@ -298,57 +300,18 @@ namespace ChappellEberleAstorga_Assign4
             this.buttonEquals.UseVisualStyleBackColor = false;
             this.buttonEquals.Click += new System.EventHandler(this.buttonEquals_Click);
             // 
-            // buttonEqWhite
+            // buttonEqChoose
             // 
-            this.buttonEqWhite.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.buttonEqWhite.Font = new System.Drawing.Font("Source Code Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEqWhite.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonEqWhite.Location = new System.Drawing.Point(12, 426);
-            this.buttonEqWhite.Name = "buttonEqWhite";
-            this.buttonEqWhite.Size = new System.Drawing.Size(67, 44);
-            this.buttonEqWhite.TabIndex = 18;
-            this.buttonEqWhite.Text = "Eq 1";
-            this.buttonEqWhite.UseVisualStyleBackColor = false;
-            this.buttonEqWhite.Click += new System.EventHandler(this.buttonEqWhite_Click);
-            // 
-            // buttonEqRed
-            // 
-            this.buttonEqRed.BackColor = System.Drawing.Color.Red;
-            this.buttonEqRed.Font = new System.Drawing.Font("Source Code Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEqRed.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonEqRed.Location = new System.Drawing.Point(85, 426);
-            this.buttonEqRed.Name = "buttonEqRed";
-            this.buttonEqRed.Size = new System.Drawing.Size(67, 44);
-            this.buttonEqRed.TabIndex = 19;
-            this.buttonEqRed.Text = "Eq 2";
-            this.buttonEqRed.UseVisualStyleBackColor = false;
-            this.buttonEqRed.Click += new System.EventHandler(this.buttonEqRed_Click);
-            // 
-            // buttonEqGreen
-            // 
-            this.buttonEqGreen.BackColor = System.Drawing.Color.Lime;
-            this.buttonEqGreen.Font = new System.Drawing.Font("Source Code Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEqGreen.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonEqGreen.Location = new System.Drawing.Point(158, 426);
-            this.buttonEqGreen.Name = "buttonEqGreen";
-            this.buttonEqGreen.Size = new System.Drawing.Size(67, 44);
-            this.buttonEqGreen.TabIndex = 20;
-            this.buttonEqGreen.Text = "Eq 3";
-            this.buttonEqGreen.UseVisualStyleBackColor = false;
-            this.buttonEqGreen.Click += new System.EventHandler(this.buttonEqGreen_Click);
-            // 
-            // buttonEqBlue
-            // 
-            this.buttonEqBlue.BackColor = System.Drawing.Color.Blue;
-            this.buttonEqBlue.Font = new System.Drawing.Font("Source Code Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEqBlue.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.buttonEqBlue.Location = new System.Drawing.Point(231, 426);
-            this.buttonEqBlue.Name = "buttonEqBlue";
-            this.buttonEqBlue.Size = new System.Drawing.Size(67, 44);
-            this.buttonEqBlue.TabIndex = 21;
-            this.buttonEqBlue.Text = "Eq 4";
-            this.buttonEqBlue.UseVisualStyleBackColor = false;
-            this.buttonEqBlue.Click += new System.EventHandler(this.buttonEqBlue_Click);
+            this.buttonEqChoose.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonEqChoose.Font = new System.Drawing.Font("Source Code Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEqChoose.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonEqChoose.Location = new System.Drawing.Point(12, 426);
+            this.buttonEqChoose.Name = "buttonEqChoose";
+            this.buttonEqChoose.Size = new System.Drawing.Size(67, 44);
+            this.buttonEqChoose.TabIndex = 18;
+            this.buttonEqChoose.Text = "Y =";
+            this.buttonEqChoose.UseVisualStyleBackColor = false;
+            this.buttonEqChoose.Click += new System.EventHandler(this.buttonEqChoose_Click);
             // 
             // buttonLinear
             // 
@@ -520,10 +483,7 @@ namespace ChappellEberleAstorga_Assign4
             this.Controls.Add(this.buttonCubic);
             this.Controls.Add(this.buttonQuadratic);
             this.Controls.Add(this.buttonLinear);
-            this.Controls.Add(this.buttonEqBlue);
-            this.Controls.Add(this.buttonEqGreen);
-            this.Controls.Add(this.buttonEqRed);
-            this.Controls.Add(this.buttonEqWhite);
+            this.Controls.Add(this.buttonEqChoose);
             this.Controls.Add(this.buttonEquals);
             this.Controls.Add(this.buttonMultiply);
             this.Controls.Add(this.buttonDivide);
@@ -572,10 +532,7 @@ namespace ChappellEberleAstorga_Assign4
         private System.Windows.Forms.Button buttonMultiply;
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.Button buttonEquals;
-        private System.Windows.Forms.Button buttonEqWhite;
-        private System.Windows.Forms.Button buttonEqRed;
-        private System.Windows.Forms.Button buttonEqGreen;
-        private System.Windows.Forms.Button buttonEqBlue;
+        private System.Windows.Forms.Button buttonEqChoose;
         private System.Windows.Forms.Button buttonLinear;
         private System.Windows.Forms.Button buttonQuadratic;
         private System.Windows.Forms.Button buttonCubic;
