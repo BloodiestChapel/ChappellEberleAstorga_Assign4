@@ -61,13 +61,14 @@ namespace ChappellEberleAstorga_Assign4
             this.buttonYInt = new System.Windows.Forms.Button();
             this.outputBox = new System.Windows.Forms.TextBox();
             this.buttonClear = new System.Windows.Forms.Button();
+            this.buttonClearGraph = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.graphPanel)).BeginInit();
             this.SuspendLayout();
             // 
             // graphPanel
             // 
-            this.graphPanel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.graphPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.graphPanel.BackColor = System.Drawing.Color.DarkGray;
+            this.graphPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.graphPanel.Location = new System.Drawing.Point(12, 10);
             this.graphPanel.Name = "graphPanel";
             this.graphPanel.Size = new System.Drawing.Size(360, 298);
@@ -465,12 +466,26 @@ namespace ChappellEberleAstorga_Assign4
             this.buttonClear.UseVisualStyleBackColor = false;
             this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
+            // buttonClearGraph
+            // 
+            this.buttonClearGraph.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.buttonClearGraph.Font = new System.Drawing.Font("Source Code Pro", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonClearGraph.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonClearGraph.Location = new System.Drawing.Point(231, 426);
+            this.buttonClearGraph.Name = "buttonClearGraph";
+            this.buttonClearGraph.Size = new System.Drawing.Size(67, 44);
+            this.buttonClearGraph.TabIndex = 34;
+            this.buttonClearGraph.Text = "Clear Graph";
+            this.buttonClearGraph.UseVisualStyleBackColor = false;
+            this.buttonClearGraph.Click += new System.EventHandler(this.buttonClearGraph_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Desktop;
             this.ClientSize = new System.Drawing.Size(384, 681);
+            this.Controls.Add(this.buttonClearGraph);
             this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.outputBox);
             this.Controls.Add(this.buttonYInt);
@@ -545,6 +560,7 @@ namespace ChappellEberleAstorga_Assign4
         private System.Windows.Forms.Button buttonYInt;
         private System.Windows.Forms.TextBox outputBox;
         private System.Windows.Forms.Button buttonClear;
+        private System.Windows.Forms.Button buttonClearGraph;
     }
 }
 
